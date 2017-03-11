@@ -1,0 +1,21 @@
+<div ng-controller="AppCtrl" ng-app="myApp" class="md-padding dialogdemoBasicUsage" id="popupContainer">
+    <table class="table table-hover">
+    <% properties.forEach(function(property) { %>
+    <tr>
+        <td><%= property.title%></td>
+        <td><%= property.estate%></td>
+        <td><a href="/property/interestedMembers/<%= property.id %>"><%= __('property_my_interested_member')%></a></td>
+        <td><a href="/property/update/<%= property.id%>"><%= __('common_label_edit')%></a></td>
+        <td><md-button class="md-primary md-raised" ng-click="showConfirm($event,<%= property.id%>)"><%= __('common_label_delete') %></md-button>
+        </td>
+    </tr>
+    <% }); %>
+</table>
+
+<div ng-if="status" id="status">
+    <b layout="row" layout-align="center center" class="md-padding">
+      {{status}}
+    </b>
+</div>
+
+</div>

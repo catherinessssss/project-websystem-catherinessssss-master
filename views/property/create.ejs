@@ -1,0 +1,54 @@
+<h1><%= __('property_create_form_title') %></h1>
+<form class="form-horizontal" role="form" action="/property/create" method="POST">
+  <div class="form-group">
+    <label for="property_create_title" class="col-sm-2 control-label"><%= __('property_create_title') %></label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" required id="property_create_title" name="Property[title]">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="property_create_image_url" class="col-sm-2 control-label"><%= __('property_create_image_url')%></label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="property_create_image_url" name="Property[imageUrl]">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="property_create_estate" class="col-sm-2 control-label"><%= __('property_create_estate')%></label>
+    <div class="col-sm-10">
+      <select class="form-control" id="property_create_estate" name="Property[estate]">
+        <option value="Festival City">Festival City</option>
+        <option value="Tin Ma Court">Tin Ma Court</option>
+        <option value="City One Shatin">City One Shatin</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="property_create_bedrooms" class="col-sm-2 control-label"><%= __('property_create_bedrooms')%></label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" min="0" id="property_create_bedrooms" name="Property[bedrooms]">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="property_create_gross_area" class="col-sm-2 control-label"><%= __('property_create_gross_area')%></label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" min="0" id="property_create_gross_area"  name="Property[grossArea]">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="property_create_expected_tenants" class="col-sm-2 control-label"><%= __('property_create_expected_tenants')%></label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" min="0" id="property_create_expected_tenants" name="Property[expectedTenants]">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="property_create_rent" class="col-sm-2 control-label"><%= __('property_create_rent')%></label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" min="0" id="property_create_rent" name="Property[rent]">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default"><%= __('common_btn_submit')%></button>
+    </div>
+  </div>
+</form>

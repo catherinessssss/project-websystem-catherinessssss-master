@@ -1,0 +1,52 @@
+{
+	"Welcome": "Welcome",
+	"A brand new app.": "A brand new app.",
+
+
+    "common_btn_submit": "Submit",
+    "common_btn_update": "Update",
+    "common_label_edit":"Edit",
+    "common_label_delete": "Delete",
+
+    "login_form_heading": "Please sign in",
+    "login_username": "Username",
+    "login_password": "Password",
+    "login_btn_sign_in": "Sign in",
+    "login_register_hint":"No Account? Register ",
+    "login_register_hint_here":"here!",
+
+    "property_create_form_title": "Property Create Form",
+    "property_create_title": "Property title",
+    "property_create_image_url": "Image URL",
+    "property_create_estate": "Estate",
+    "property_create_bedrooms": "Bedrooms",
+    "property_create_gross_area": "Gross Area",
+    "property_create_expected_tenants": "Expected Tenants",
+    "property_create_rent": "Rent",
+
+    "property_view_estate": "Estate: ",
+    "property_view_bedrooms": "Bedrooms: ",
+    "property_view_gross_area": "Gross Area: ",
+    "property_view_expected_tenants": "Expected Tenants: ",
+    "property_view_rent": "Rent: ",
+    "property_view_created": "Created:",
+    "property_view_updated": "Updated: ",
+    "property_view_btn_declare":"Declare Interest",
+
+    "property_update_form_title": "Property Create Form",
+    "property_update_title": "Property title",
+    "property_update_image_url": "Image URL",
+    "property_update_estate": "Estate",
+    "property_update_bedrooms": "Bedrooms",
+    "property_update_gross_area": "Gross Area",
+    "property_update_expected_tenants": "Expected Tenants",
+    "property_update_rent": "Rent",
+
+    "property_search_estate" :"Estate",
+    "property_search_bedrooms":"Bedrooms",
+    "property_search_area":"Area(Sq feet)",
+    "property_search_rent_price":"Rent(HK$)",
+
+    "property_my_interested_member":"Interested Members"
+
+}

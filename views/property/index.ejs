@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row">
+    <% properties.forEach(function(property) { %>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <a href="/property/view/<%=property.id%>"><%= property.title %></a>
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="col-md-4 property-view-imgdiv">
+            <img alt="Property Image Preview" class="img-rounded" src="<%= property.imageUrl%>" />
+          </div>
+          <div class="col-md-8">
+            <table class="table table-bordered">
+              <tr>
+                <td>
+                  <label class="font-weight-bold"><%= __('property_view_estate')%></label><%= property.estate %>
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                      <label class="font-weight-bold"><%= __('property_view_gross_area')%></label><%= property.grossArea %>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <label class="font-weight-bold"><%= __('property_view_rent')%></label>$<%= property.rent %>
+                  </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% }); %>
+  </div>
+</div>
